@@ -1,7 +1,11 @@
 #Greenfoot project file
 <<<<<<< HEAD
+<<<<<<< HEAD
 class.a.image=man01.png
 =======
+=======
+class.human.image=man.png
+>>>>>>> d4a61e92951ef0c712783543003af510ab8496db
 class.kame.image=turtle2.png
 >>>>>>> 36c907d0f616871e5161e5afcbb6ad9813085da4
 editor.fx.0.height=0
@@ -10,7 +14,7 @@ editor.fx.0.x=0
 editor.fx.0.y=0
 height=594
 package.numDependencies=0
-package.numTargets=2
+package.numTargets=3
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -37,15 +41,23 @@ target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
-target2.name=MyWorld
+target2.name=human
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
+target3.height=50
+target3.name=MyWorld
+target3.showInterface=false
+target3.type=ClassTarget
+target3.width=80
+target3.x=0
+target3.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 <<<<<<< HEAD
 xPosition=400
 yPosition=210
@@ -53,3 +65,7 @@ yPosition=210
 xPosition=907
 yPosition=250
 >>>>>>> 36c907d0f616871e5161e5afcbb6ad9813085da4
+=======
+xPosition=644
+yPosition=254
+>>>>>>> d4a61e92951ef0c712783543003af510ab8496db
