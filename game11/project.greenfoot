@@ -1,5 +1,9 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.a.image=man01.png
+=======
+class.kame.image=turtle2.png
+>>>>>>> 36c907d0f616871e5161e5afcbb6ad9813085da4
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -22,7 +26,11 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
+<<<<<<< HEAD
 target1.name=a
+=======
+target1.name=kame
+>>>>>>> 36c907d0f616871e5161e5afcbb6ad9813085da4
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
@@ -38,5 +46,10 @@ target2.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=400
 yPosition=210
+=======
+xPosition=907
+yPosition=250
+>>>>>>> 36c907d0f616871e5161e5afcbb6ad9813085da4
