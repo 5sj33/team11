@@ -1,18 +1,11 @@
 #Greenfoot project file
-<<<<<<< HEAD
-<<<<<<< HEAD
-class.a.image=man01.png
-=======
-=======
-class.human.image=man.png
->>>>>>> d4a61e92951ef0c712783543003af510ab8496db
-class.kame.image=turtle2.png
->>>>>>> 36c907d0f616871e5161e5afcbb6ad9813085da4
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=594
+class.kate.image=\u30CD\u30C3\u30C9\u30FB\u30B1\u30EA\u30FC\u306E\u30A4\u30E9\u30B9\u30C8.png
+class.runrun.image=yumekawa.png
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+height=595
 package.numDependencies=0
 package.numTargets=3
 project.charset=UTF-8
@@ -30,18 +23,14 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
-<<<<<<< HEAD
-target1.name=a
-=======
-target1.name=kame
->>>>>>> 36c907d0f616871e5161e5afcbb6ad9813085da4
+target1.name=kate
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
-target2.name=human
+target2.name=runrun
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
@@ -57,15 +46,5 @@ target3.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-<<<<<<< HEAD
-xPosition=400
-yPosition=210
-=======
-xPosition=907
-yPosition=250
->>>>>>> 36c907d0f616871e5161e5afcbb6ad9813085da4
-=======
-xPosition=644
-yPosition=254
->>>>>>> d4a61e92951ef0c712783543003af510ab8496db
+xPosition=1002
+yPosition=220

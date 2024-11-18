@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class kame here.
+ * Write a description of class kate here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class kame extends Actor
+public class kate extends Actor
 {
     /**
-     * Act - do whatever the kame wants to do. This method is called whenever
+     * Act - do whatever the kate wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
