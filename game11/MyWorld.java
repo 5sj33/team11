@@ -112,4 +112,11 @@ public class MyWorld extends World
             A++;
     }
 }
+public void act()
+{
+    if( Greenfoot.isKeyDown( "space" ) ){
+        World game = new select();
+        Greenfoot.setWorld( game );
+    }
+}
 }
