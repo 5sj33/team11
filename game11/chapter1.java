@@ -10,7 +10,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class select extends World
+public class chapter1 extends World
 {
     class TextLabelEx extends TextLabel
     {
@@ -92,14 +92,14 @@ public class select extends World
      * Constructor for objects of class select.
      * 
      */
-    public select()
+    public chapter1()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1600, 900, 1); 
-        showTextEx("キャラクターを選択してください♪", 800, 250, 70, true, Color.WHITE );
+ 
         
         addObject(new kate(), 300,550);
-       
+        
         
         
         
