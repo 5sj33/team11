@@ -15,5 +15,6 @@ public class runrun extends Actor
     public void act() 
     {
         // Add your action code here.
+        getImage().scale(400,400);
     }    
 }
