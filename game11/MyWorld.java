@@ -1,5 +1,4 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import greenfoot.*;
 import greenfoot.core.TextLabel;
 import greenfoot.WorldVisitor;
 import greenfoot.util.GraphicsUtilities;
@@ -110,7 +109,7 @@ public class MyWorld extends World
             showTextEx("Ring of Legends", 800, 350, 150, true, Color.RED );
             showTextEx("Welcome to SamoLif", 800, 550, 75, true, Color.RED );
             A++;
-    }
+        }
 }
 public void act()
 {
