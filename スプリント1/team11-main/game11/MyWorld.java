@@ -4,14 +4,19 @@ import greenfoot.WorldVisitor;
 import greenfoot.util.GraphicsUtilities;
 import java.util.ArrayList;
 import java.awt.Graphics2D;
+
 /**
- * Write a description of class select here.
+ * Write a description of class MyWorld here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class chapter1_kate extends World
+public class MyWorld extends World
 {
+
+        // Reffered from core/TextLabel.java
+    // Copyright (C) 2013,2014 Poul Henriksen and Michael Kolling 
+    // Licence: GPL2
     class TextLabelEx extends TextLabel
     {
         boolean enable;
@@ -88,27 +93,29 @@ public class chapter1_kate extends World
         
         //showText( "labels: "+WorldVisitor.getTextLabels(this).size(), 80, 20 );
     }
+    
     /**
-     * Constructor for objects of class select.
+     * Constructor for objects of class MyWorld.
      * 
      */
-    public chapter1_kate()
+    public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        
         super(1600, 900, 1); 
-        
-        showTextEx("Kate", 350, 300, 150, true, Color.WHITE );
-        showTextEx("このキャラクターは銃で攻撃します！", 400, 400, 50, true, Color.WHITE );
-        showTextEx("弾をあてるのが得意または好きな人", 400, 500, 50, true, Color.WHITE );
-        showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
-        
-        addObject(new kate(), 1300,550);
-        showTextEx("Kate", 1300, 300, 40, true, Color.WHITE );
-        
-        
-        
-        
-        
+        int A=0;
+        if(A==0){
+            //showText("Ring of Legends",800,350);
+            showTextEx("Ring of Legends", 800, 350, 150, true, Color.RED );
+            showTextEx("Welcome to SamoLif", 800, 550, 75, true, Color.RED );
+            A++;
+        }
+}
+public void act()
+{
+    if( Greenfoot.isKeyDown( "space" ) ){
+        World game = new select();
+        Greenfoot.setWorld( game );
     }
-    
+}
 }

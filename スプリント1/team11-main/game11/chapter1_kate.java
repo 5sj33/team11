@@ -97,14 +97,7 @@ public class chapter1_kate extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1600, 900, 1); 
         
-        showTextEx("Kate", 350, 300, 150, true, Color.WHITE );
-        showTextEx("このキャラクターは銃で攻撃します！", 400, 400, 50, true, Color.WHITE );
-        showTextEx("弾をあてるのが得意または好きな人", 400, 500, 50, true, Color.WHITE );
-        showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
-        
-        addObject(new kate(), 1300,550);
-        showTextEx("Kate", 1300, 300, 40, true, Color.WHITE );
-        
+       
         
         
         
