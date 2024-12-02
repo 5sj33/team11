@@ -10,6 +10,7 @@ class.kate.image=\u30CD\u30C3\u30C9\u30FB\u30B1\u30EA\u30FC\u306E\u30A4\u30E9\u3
 class.keropi.image=keruberosu.png
 class.runrun.image=yumekawa.png
 class.select.image=SamoLif.png
+class.smalltower.image=\u8C61\u7259\u306E\u5854\u306E\u30A4\u30E9\u30B9\u30C8.png
 dependency1.from=chapter1_keropi
 dependency1.to=keropi
 dependency1.type=UsesDependency
@@ -40,39 +41,16 @@ dependency7.type=UsesDependency
 dependency8.from=chapter1
 dependency8.to=kate
 dependency8.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=1056
-package.numDependencies=8
-package.numTargets=15
-=======
-<<<<<<< HEAD
 dependency9.from=chapter1_runrun
 dependency9.to=runrun
 dependency9.type=UsesDependency
-=======
->>>>>>> d4c29ee150fe9d691a5f36ffed15a9e9631dfc3c
->>>>>>> 3d35fcb8737bf91fabec3e986c623e2056ce665c
 editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=874
-editor.fx.0.y=116
+editor.fx.0.width=1016
+editor.fx.0.x=559
+editor.fx.0.y=130
 height=1046
-<<<<<<< HEAD
 package.numDependencies=11
-=======
-<<<<<<< HEAD
-package.numDependencies=3
-package.numTargets=10
-=======
-package.numDependencies=8
->>>>>>> 3d35fcb8737bf91fabec3e986c623e2056ce665c
-package.numTargets=12
->>>>>>> d4c29ee150fe9d691a5f36ffed15a9e9631dfc3c
->>>>>>> 4e397cfeabd5b375ca41393b349392e05b6b7732
+package.numTargets=15
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true

@@ -108,6 +108,7 @@ public class MyWorld extends World
             //showText("Ring of Legends",800,350);
             showTextEx("Ring of Legends", 800, 350, 150, true, Color.RED );
             showTextEx("Welcome to SamoLif", 800, 550, 75, true, Color.RED );
+            showTextEx("スペースを押してください", 800, 650, 60, true, Color.RED );
             A++;
         }
 }
