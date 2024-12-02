@@ -9,9 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * 
  * @author (your name) 
  * @version (a version number or a date)
+ * <<<<<<<< HEAD:game11/smalltower.java
  */
-<<<<<<<< HEAD:game11/smalltower.java
-public class smalltower extends Actor
+
+public class kate extends Actor
 {
     /**
      * Act - do whatever the smalltower wants to do. This method is called whenever
