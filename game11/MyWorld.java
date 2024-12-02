@@ -8,8 +8,7 @@ import java.util.ArrayList;
 import java.awt.Graphics2D;
 
 /**
- * Write a description of class MyWorld here.
- * @author (your name) @version (a version number or a date)
+ * Write a description of class MyWorld here. @author (your name) @version (a version number or a date)
  */
 public class MyWorld extends World
 {
@@ -30,9 +29,7 @@ public class MyWorld extends World
         }
     }
 
-    /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
-
-    /* Reffered from core/TextLabel.java Copyright (C) 2013,2014 Poul Henriksen and Michael Kolling Licence: GPL2 Unsupported feature in Stride : inner class*/
+    /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo) Reffered from core/TextLabel.java Copyright (C) 2013,2014 Poul Henriksen and Michael Kolling Licence: GPL2 Unsupported feature in Stride : inner class*/
 
     /**
      * 
