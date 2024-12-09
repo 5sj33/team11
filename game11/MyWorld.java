@@ -115,7 +115,7 @@ public class MyWorld extends World
 public void act()
 {
     if( Greenfoot.isKeyDown( "space" ) ){
-        World game = new select();
+        World game = new chapter1();
         Greenfoot.setWorld( game );
     }
 }
