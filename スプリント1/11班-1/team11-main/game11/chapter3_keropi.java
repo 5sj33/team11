@@ -10,7 +10,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class chapter1_keropi extends World
+public class chapter3_keropi extends World
 {
     class TextLabelEx extends TextLabel
     {
@@ -92,34 +92,21 @@ public class chapter1_keropi extends World
      * Constructor for objects of class select.
      * 
      */
-    public chapter1_keropi()
+    public chapter3_keropi()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1600, 900, 1); 
         
-        showTextEx("keropi", 350, 300, 150, true, Color.WHITE );
-        showTextEx("このキャラクターは体で攻撃します！", 400, 400, 50, true, Color.WHITE );
-        showTextEx("体当たりが得意または好きな人", 400, 500, 50, true, Color.WHITE );
-        showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
+        showTextEx("塔を攻撃してリングを取り返そう！", 800, 100, 80, true, Color.WHITE );
         
-        addObject(new keropi(), 1300,550);
-        showTextEx("Keropi", 1300, 300, 40, true, Color.WHITE );
-        
-        showTextEx("スペースで続行→", 700, 800, 50, true, Color.WHITE );
-        showTextEx("←Escで選択画面に戻る", 700, 850, 50, true, Color.WHITE );
+        addObject(new smalltower(), 950,300);
+        addObject(new smalltower(), 1000,500);
+        addObject(new smalltower(), 1250,700);
+        addObject(new bigtower(), 1300,350);
         
         
         
-    }
-    public void act()
-    {
-        if( Greenfoot.isKeyDown( "space" ) ){
-            World game = new chapter3_keropi();
-            Greenfoot.setWorld( game );
-        }else if(Greenfoot.isKeyDown( "escape" )){
-            World game = new select();
-            Greenfoot.setWorld( game );
-        }
+        
     }
     
 }
