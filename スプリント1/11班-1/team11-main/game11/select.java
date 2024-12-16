@@ -4,19 +4,14 @@ import greenfoot.WorldVisitor;
 import greenfoot.util.GraphicsUtilities;
 import java.util.ArrayList;
 import java.awt.Graphics2D;
-
 /**
- * Write a description of class MyWorld here.
+ * Write a description of class select here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class select extends World
 {
-
-        // Reffered from core/TextLabel.java
-    // Copyright (C) 2013,2014 Poul Henriksen and Michael Kolling 
-    // Licence: GPL2
     class TextLabelEx extends TextLabel
     {
         boolean enable;
@@ -93,30 +88,39 @@ public class MyWorld extends World
         
         //showText( "labels: "+WorldVisitor.getTextLabels(this).size(), 80, 20 );
     }
-    
     /**
-     * Constructor for objects of class MyWorld.
+     * Constructor for objects of class select.
      * 
      */
-    public MyWorld()
+    public select()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        
         super(1600, 900, 1); 
-        int A=0;
-        if(A==0){
-            //showText("Ring of Legends",800,350);
-            showTextEx("Ring of Legends", 800, 350, 150, true, Color.RED );
-            showTextEx("Welcome to SamoLif", 800, 550, 75, true, Color.RED );
-            showTextEx("スペースを押してください", 800, 650, 60, true, Color.RED );
-            A++;
-        }
-}
-public void act()
-{
-    if( Greenfoot.isKeyDown( "space" ) ){
-        World game = new chapter1();
-        Greenfoot.setWorld( game );
+        showTextEx("キャラクターを選択してください♪", 800, 200, 70, true, Color.WHITE );
+        
+        addObject(new kate(), 300,550);
+        showTextEx("1キーで選択", 300, 300, 40, true, Color.WHITE );
+        addObject(new keropi(), 800,550);
+        showTextEx("2キーで選択", 800, 300, 40, true, Color.WHITE );
+        addObject(new runrun(), 1300,550);
+        showTextEx("3キーで選択", 1300, 300, 40, true, Color.WHITE );
+       
+        
+        
+        
+        
     }
-}
+    public void act()
+    {
+        if( Greenfoot.isKeyDown( "1" ) ){
+            World game = new chapter1_kate();
+            Greenfoot.setWorld( game );
+        }else if(Greenfoot.isKeyDown( "2" )){
+            World game = new chapter1_keropi();
+            Greenfoot.setWorld( game );
+        }else if(Greenfoot.isKeyDown( "3" )){
+            World game = new chapter1_runrun();
+            Greenfoot.setWorld( game );
+        }
+    }
 }

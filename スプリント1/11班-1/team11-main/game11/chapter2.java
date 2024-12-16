@@ -11,7 +11,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class chapter2 extends World
 {
 
         // Reffered from core/TextLabel.java
@@ -98,24 +98,19 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    public MyWorld()
+    public chapter2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
         super(1600, 900, 1); 
-        int A=0;
-        if(A==0){
-            //showText("Ring of Legends",800,350);
-            showTextEx("Ring of Legends", 800, 350, 150, true, Color.RED );
-            showTextEx("Welcome to SamoLif", 800, 550, 75, true, Color.RED );
-            showTextEx("スペースを押してください", 800, 650, 60, true, Color.RED );
-            A++;
-        }
-}
-public void act()
-{
+        addObject(new bigtower(), 1700,400);
+        
+        
+    }
+    public void act()
+    {
     if( Greenfoot.isKeyDown( "space" ) ){
-        World game = new chapter1();
+        World game = new select();
         Greenfoot.setWorld( game );
     }
 }

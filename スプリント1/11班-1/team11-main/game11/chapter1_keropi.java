@@ -4,19 +4,14 @@ import greenfoot.WorldVisitor;
 import greenfoot.util.GraphicsUtilities;
 import java.util.ArrayList;
 import java.awt.Graphics2D;
-
 /**
- * Write a description of class MyWorld here.
+ * Write a description of class select here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class chapter1_keropi extends World
 {
-
-        // Reffered from core/TextLabel.java
-    // Copyright (C) 2013,2014 Poul Henriksen and Michael Kolling 
-    // Licence: GPL2
     class TextLabelEx extends TextLabel
     {
         boolean enable;
@@ -93,30 +88,38 @@ public class MyWorld extends World
         
         //showText( "labels: "+WorldVisitor.getTextLabels(this).size(), 80, 20 );
     }
-    
     /**
-     * Constructor for objects of class MyWorld.
+     * Constructor for objects of class select.
      * 
      */
-    public MyWorld()
+    public chapter1_keropi()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        
         super(1600, 900, 1); 
-        int A=0;
-        if(A==0){
-            //showText("Ring of Legends",800,350);
-            showTextEx("Ring of Legends", 800, 350, 150, true, Color.RED );
-            showTextEx("Welcome to SamoLif", 800, 550, 75, true, Color.RED );
-            showTextEx("スペースを押してください", 800, 650, 60, true, Color.RED );
-            A++;
-        }
-}
-public void act()
-{
-    if( Greenfoot.isKeyDown( "space" ) ){
-        World game = new chapter1();
-        Greenfoot.setWorld( game );
+        
+        showTextEx("keropi", 350, 300, 150, true, Color.WHITE );
+        showTextEx("このキャラクターは体で攻撃します！", 400, 400, 50, true, Color.WHITE );
+        showTextEx("体当たりが得意または好きな人", 400, 500, 50, true, Color.WHITE );
+        showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
+        
+        addObject(new keropi(), 1300,550);
+        showTextEx("Keropi", 1300, 300, 40, true, Color.WHITE );
+        
+        showTextEx("スペースで続行→", 700, 800, 50, true, Color.WHITE );
+        showTextEx("←Escで選択画面に戻る", 700, 850, 50, true, Color.WHITE );
+        
+        
+        
     }
-}
+    public void act()
+    {
+        if( Greenfoot.isKeyDown( "space" ) ){
+            World game = new chapter3_keropi();
+            Greenfoot.setWorld( game );
+        }else if(Greenfoot.isKeyDown( "escape" )){
+            World game = new select();
+            Greenfoot.setWorld( game );
+        }
+    }
+    
 }

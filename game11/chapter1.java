@@ -98,11 +98,23 @@ public class chapter1 extends World
         super(1600, 900, 1); 
  
         
-        addObject(new kate(), 300,550);
-        
+        addObject(new kate(), 250,550);
+        showTextEx("ひょんなことから、大事なRingがとられてしまった！取り戻すために敵地へ行く。", 800, 300, 50, true, Color.RED );
+        showTextEx("クリア条件: ", 800, 450, 50, true, Color.RED );
+        showTextEx("敵地にある塔を破壊し大事なRingを取り戻す ", 800, 500, 50, true, Color.RED );
+        showTextEx("塔を1つ壊すごとにオーブが手に入り、 ", 800, 600, 50, true, Color.RED );
+        showTextEx("3つ集まると最後の塔に3分の1ダメージを与えるよ ", 800, 650, 50, true, Color.RED );
+        showTextEx("スペースを押してください...", 800, 800, 50, true, Color.WHITE );
         
         
         
         
     }
+    public void act()
+{
+    if( Greenfoot.isKeyDown( "space" ) ){
+        World game = new select();
+        Greenfoot.setWorld( game );
+    }
+}
 }
