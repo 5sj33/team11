@@ -10,7 +10,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class chapter2_kate extends World
+public class chapter2_keropi extends World
 {
     class TextLabelEx extends TextLabel
     {
@@ -89,7 +89,7 @@ public class chapter2_kate extends World
         //showText( "labels: "+WorldVisitor.getTextLabels(this).size(), 80, 20 );
     }
 
-    public chapter2_kate()
+    public chapter2_keropi()
     {    
         // Create a new world with 1600x900 cells with a cell size of 1x1 pixels.
         super(1600, 900, 1); 
@@ -122,7 +122,7 @@ public class chapter2_kate extends World
 
 
         // Add the kate character to the world
-        kate player = new kate();
+        keropi player = new keropi();
         addObject(player,getWidth() - 1300, 700); // 初期位置 (左端中央)
     }
 }
