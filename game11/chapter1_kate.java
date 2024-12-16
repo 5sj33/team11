@@ -10,7 +10,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class select extends World
+public class chapter1_kate extends World
 {
     class TextLabelEx extends TextLabel
     {
@@ -92,35 +92,23 @@ public class select extends World
      * Constructor for objects of class select.
      * 
      */
-    public select()
+    public chapter1_kate()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1600, 900, 1); 
-        showTextEx("キャラクターを選択してください♪", 800, 200, 70, true, Color.WHITE );
         
-        addObject(new kate(), 300,550);
-        showTextEx("1キーで選択", 300, 300, 40, true, Color.WHITE );
-        addObject(new keropi(), 800,550);
-        showTextEx("2キーで選択", 800, 300, 40, true, Color.WHITE );
-        addObject(new runrun(), 1300,550);
-        showTextEx("3キーで選択", 1300, 300, 40, true, Color.WHITE );
-       
+        showTextEx("Kate", 350, 300, 150, true, Color.WHITE );
+        showTextEx("このキャラクターは銃で攻撃します！", 400, 400, 50, true, Color.WHITE );
+        showTextEx("弾をあてるのが得意または好きな人", 400, 500, 50, true, Color.WHITE );
+        showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
+        
+        addObject(new kate(), 1300,550);
+        showTextEx("Kate", 1300, 300, 40, true, Color.WHITE );
+        
         
         
         
         
     }
-    public void act()
-    {
-        if( Greenfoot.isKeyDown( "1" ) ){
-            World game = new chapter1_kate();
-            Greenfoot.setWorld( game );
-        }else if(Greenfoot.isKeyDown( "2" )){
-            World game = new chapter1_keropi();
-            Greenfoot.setWorld( game );
-        }else if(Greenfoot.isKeyDown( "3" )){
-            World game = new chapter1_runrun();
-            Greenfoot.setWorld( game );
-        }
-    }
+    
 }
