@@ -10,7 +10,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class chapter1_keropi extends World
+public class chapter2_runrun extends World
 {
     class TextLabelEx extends TextLabel
     {
@@ -88,38 +88,42 @@ public class chapter1_keropi extends World
         
         //showText( "labels: "+WorldVisitor.getTextLabels(this).size(), 80, 20 );
     }
-    /**
-     * Constructor for objects of class select.
-     * 
-     */
-    public chapter1_keropi()
+
+    public chapter2_runrun()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1600x900 cells with a cell size of 1x1 pixels.
         super(1600, 900, 1); 
         
-        showTextEx("keropi", 350, 300, 150, true, Color.WHITE );
-        showTextEx("このキャラクターは体で攻撃します！", 400, 400, 50, true, Color.WHITE );
-        showTextEx("体当たりが得意または好きな人", 400, 500, 50, true, Color.WHITE );
-        showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
-        
-        addObject(new keropi(), 1300,550);
-        showTextEx("Keropi", 1300, 300, 40, true, Color.WHITE );
-        showTextEx("スペースで続行→", 800, 700, 40, true, Color.WHITE );
-        showTextEx("←Escapeでキャラ選択画面に戻る", 800, 800, 40, true, Color.WHITE );
-        
-        
-        
-        
+        // Add the bigtower objects to the world
+        bigtower tower = new bigtower();
+        GreenfootImage image = tower.getImage();
+        image.scale(400, 400);
+        tower.setImage(image);
+        addObject(tower, getWidth() - 200, 200);
+     
+        smalltower small1 = new smalltower();
+        GreenfootImage smallImage1 = small1.getImage();
+        smallImage1.scale(260, 200); 
+        small1.setImage(smallImage1);
+        addObject(small1, getWidth() - 150, 480);
+        smalltower small2 = new smalltower();
+        GreenfootImage smallImage2 = small2.getImage();
+        smallImage2.scale(260, 200);
+        small2.setImage(smallImage2);
+        addObject(small2, getWidth() - 400,420);
+
+        smalltower small3 = new smalltower();
+        GreenfootImage smallImage3 = small3.getImage();
+        smallImage3.scale(260, 200); 
+        small3.setImage(smallImage3);
+        addObject(small3, getWidth() - 480, 240);
+        showTextEx("塔を攻撃してください", 780, 100, 50, true, Color.WHITE );
+
+
+
+        // Add the kate character to the world
+        runrun player = new runrun();
+        addObject(player,getWidth() - 1300, 700); // 初期位置 (左端中央)
     }
-    public void act()
-    {
-        if( Greenfoot.isKeyDown( "space" ) ){
-            World game = new chapter1();
-            Greenfoot.setWorld( game );
-        }else if(Greenfoot.isKeyDown( "escape" )){
-            World game = new select();
-            Greenfoot.setWorld( game );
-        }
 }
-    
-}
+

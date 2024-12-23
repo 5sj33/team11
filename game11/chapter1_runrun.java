@@ -104,10 +104,22 @@ public class chapter1_runrun extends World
         
         addObject(new runrun(), 1300,550);
         showTextEx("runrun", 1300, 300, 40, true, Color.WHITE );
+        showTextEx("スペースで続行→", 800, 700, 40, true, Color.WHITE );
+        showTextEx("←Escapeでキャラ選択画面に戻る", 800, 800, 40, true, Color.WHITE );
         
         
         
         
     }
+    public void act()
+    {
+        if( Greenfoot.isKeyDown( "space" ) ){
+            World game = new chapter1();
+            Greenfoot.setWorld( game );
+        }else if(Greenfoot.isKeyDown( "escape" )){
+            World game = new select();
+            Greenfoot.setWorld( game );
+        }
+}
     
 }

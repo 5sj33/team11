@@ -4,14 +4,19 @@ import greenfoot.WorldVisitor;
 import greenfoot.util.GraphicsUtilities;
 import java.util.ArrayList;
 import java.awt.Graphics2D;
+
 /**
- * Write a description of class select here.
+ * Write a description of class MyWorld here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class chapter1_keropi extends World
+public class MyWorld extends World
 {
+
+        // Reffered from core/TextLabel.java
+    // Copyright (C) 2013,2014 Poul Henriksen and Michael Kolling 
+    // Licence: GPL2
     class TextLabelEx extends TextLabel
     {
         boolean enable;
@@ -88,38 +93,29 @@ public class chapter1_keropi extends World
         
         //showText( "labels: "+WorldVisitor.getTextLabels(this).size(), 80, 20 );
     }
+    
     /**
-     * Constructor for objects of class select.
+     * Constructor for objects of class MyWorld.
      * 
      */
-    public chapter1_keropi()
+    public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        
         super(1600, 900, 1); 
-        
-        showTextEx("keropi", 350, 300, 150, true, Color.WHITE );
-        showTextEx("このキャラクターは体で攻撃します！", 400, 400, 50, true, Color.WHITE );
-        showTextEx("体当たりが得意または好きな人", 400, 500, 50, true, Color.WHITE );
-        showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
-        
-        addObject(new keropi(), 1300,550);
-        showTextEx("Keropi", 1300, 300, 40, true, Color.WHITE );
-        showTextEx("スペースで続行→", 800, 700, 40, true, Color.WHITE );
-        showTextEx("←Escapeでキャラ選択画面に戻る", 800, 800, 40, true, Color.WHITE );
-        
-        
-        
-        
-    }
-    public void act()
-    {
-        if( Greenfoot.isKeyDown( "space" ) ){
-            World game = new chapter1();
-            Greenfoot.setWorld( game );
-        }else if(Greenfoot.isKeyDown( "escape" )){
-            World game = new select();
-            Greenfoot.setWorld( game );
+        int A=0;
+        if(A==0){
+            //showText("Ring of Legends",800,350);
+            showTextEx("Ring of Legends", 800, 350, 150, true, Color.RED );
+            showTextEx("Welcome to SamoLif", 800, 550, 75, true, Color.RED );
+            A++;
         }
 }
-    
+public void act()
+{
+    if( Greenfoot.isKeyDown( "space" ) ){
+        World game = new select();
+        Greenfoot.setWorld( game );
+    }
+}
 }

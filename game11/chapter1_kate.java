@@ -105,10 +105,23 @@ public class chapter1_kate extends World
         addObject(new kate(), 1300,550);
         showTextEx("Kate", 1300, 300, 40, true, Color.WHITE );
         
+        showTextEx("スペースで続行→", 800, 700, 40, true, Color.WHITE );
+        showTextEx("←Escapeでキャラ選択画面に戻る", 800, 800, 40, true, Color.WHITE );
+        
         
         
         
         
     }
+    public void act()
+    {
+        if( Greenfoot.isKeyDown( "space" ) ){
+            World game = new chapter2_kate();
+            Greenfoot.setWorld( game );
+        }else if(Greenfoot.isKeyDown( "escape" )){
+            World game = new select();
+            Greenfoot.setWorld( game );
+        }
+}
     
 }
