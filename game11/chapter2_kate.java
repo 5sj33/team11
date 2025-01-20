@@ -12,6 +12,8 @@ import java.awt.Graphics2D;
  */
 public class chapter2_kate extends World
 {
+    private int speed = 5; // 移動速度の設定
+    
     class TextLabelEx extends TextLabel
     {
         boolean enable;
@@ -118,12 +120,19 @@ public class chapter2_kate extends World
         small3.setImage(smallImage3);
         addObject(small3, getWidth() - 480, 240);
         showTextEx("塔を攻撃してください", 780, 100, 50, true, Color.WHITE );
+        
+        addObject(new enemy1(), 1500,200);
+        addObject(new enemy2(), 1500,200);
 
 
 
         // Add the kate character to the world
         kate player = new kate();
         addObject(player,getWidth() - 1300, 700); // 初期位置 (左端中央)
+        
     }
+    
+
+    
 }
 

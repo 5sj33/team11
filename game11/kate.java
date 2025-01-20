@@ -9,23 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class kate extends Actor
 {
-    public kate() 
-    {
-        // 画像サイズを調整
-        getImage().scale(341, 400);
-    }
-    
-=======
- * Write a description of class kate here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class kate extends Actor
-{
     private int speed = 5; // 移動速度の設定
 
->>>>>>> df628f16de152212f1de7759f9a08e96c38dd4ff
     public void act() 
     {
         // キー入力による移動

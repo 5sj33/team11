@@ -102,7 +102,7 @@ public class chapter1_runrun extends World
         showTextEx("魔法を使うのが得意または好きな人", 400, 500, 50, true, Color.WHITE );
         showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
         
-        addObject(new runrun(), 1300,550);
+        addObject(new runrun_s(), 1300,550);
         showTextEx("runrun", 1300, 300, 40, true, Color.WHITE );
         showTextEx("スペースで続行→", 800, 700, 40, true, Color.WHITE );
         showTextEx("←Escapeでキャラ選択画面に戻る", 800, 800, 40, true, Color.WHITE );
