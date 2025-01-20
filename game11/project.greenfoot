@@ -9,8 +9,11 @@ class.chapter2.image=SamoLif.png
 class.chapter2_kate.image=SamoLif.png
 class.chapter2_keropi.image=SamoLif.png
 class.chapter2_runrun.image=SamoLif.png
+<<<<<<< HEAD
 class.enemy1.image=enemy1.png
 class.enemy2.image=enemy2.png
+=======
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 class.kate.image=\u30CD\u30C3\u30C9\u30FB\u30B1\u30EA\u30FC\u306E\u30A4\u30E9\u30B9\u30C8.png
 class.kate_s.image=\u30CD\u30C3\u30C9\u30FB\u30B1\u30EA\u30FC\u306E\u30A4\u30E9\u30B9\u30C8.png
 class.keropi.image=keruberosu.png
@@ -32,13 +35,21 @@ dependency12.from=select
 dependency12.to=chapter1_runrun
 dependency12.type=UsesDependency
 dependency13.from=chapter1
+<<<<<<< HEAD
 dependency13.to=kate_s
+=======
+dependency13.to=kate
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 dependency13.type=UsesDependency
 dependency14.from=chapter1
 dependency14.to=select
 dependency14.type=UsesDependency
 dependency15.from=chapter1_runrun
+<<<<<<< HEAD
 dependency15.to=runrun_s
+=======
+dependency15.to=runrun
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 dependency15.type=UsesDependency
 dependency16.from=chapter1_runrun
 dependency16.to=chapter1
@@ -59,7 +70,11 @@ dependency20.from=chapter2_runrun
 dependency20.to=runrun
 dependency20.type=UsesDependency
 dependency21.from=chapter1_kate
+<<<<<<< HEAD
 dependency21.to=kate_s
+=======
+dependency21.to=kate
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 dependency21.type=UsesDependency
 dependency22.from=chapter1_kate
 dependency22.to=chapter2_kate
@@ -77,6 +92,7 @@ dependency26.from=chapter2_kate
 dependency26.to=smalltower
 dependency26.type=UsesDependency
 dependency27.from=chapter2_kate
+<<<<<<< HEAD
 dependency27.to=enemy1
 dependency27.type=UsesDependency
 dependency28.from=chapter2_kate
@@ -85,6 +101,10 @@ dependency28.type=UsesDependency
 dependency29.from=chapter2_kate
 dependency29.to=kate
 dependency29.type=UsesDependency
+=======
+dependency27.to=kate
+dependency27.type=UsesDependency
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 dependency3.from=chapter1_keropi
 dependency3.to=select
 dependency3.type=UsesDependency
@@ -98,6 +118,7 @@ dependency6.from=chapter2_keropi
 dependency6.to=keropi
 dependency6.type=UsesDependency
 dependency7.from=select
+<<<<<<< HEAD
 dependency7.to=kate_s
 dependency7.type=UsesDependency
 dependency8.from=select
@@ -113,6 +134,23 @@ editor.fx.0.y=72
 height=1034
 package.numDependencies=29
 package.numTargets=20
+=======
+dependency7.to=kate
+dependency7.type=UsesDependency
+dependency8.from=select
+dependency8.to=keropi
+dependency8.type=UsesDependency
+dependency9.from=select
+dependency9.to=runrun
+dependency9.type=UsesDependency
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+height=1034
+package.numDependencies=27
+package.numTargets=18
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -135,13 +173,18 @@ target1.width=110
 target1.x=0
 target1.y=0
 target10.height=50
+<<<<<<< HEAD
 target10.name=chapter1_kate
+=======
+target10.name=keropi
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=110
 target10.x=0
 target10.y=0
 target11.height=50
+<<<<<<< HEAD
 target11.name=keropi
 target11.showInterface=false
 target11.type=ClassTarget
@@ -150,47 +193,78 @@ target11.x=0
 target11.y=0
 target12.height=50
 target12.name=runrun
+=======
+target11.name=runrun
+target11.showInterface=false
+target11.type=ClassTarget
+target11.width=80
+target11.x=0
+target11.y=0
+target12.height=50
+target12.name=bigtower
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=80
 target12.x=0
 target12.y=0
 target13.height=50
+<<<<<<< HEAD
 target13.name=bigtower
+=======
+target13.name=smalltower
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=80
 target13.x=0
 target13.y=0
 target14.height=50
+<<<<<<< HEAD
 target14.name=smalltower
+=======
+target14.name=kate
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target14.showInterface=false
 target14.type=ClassTarget
-target14.width=100
+target14.width=80
 target14.x=0
 target14.y=0
 target15.height=50
+<<<<<<< HEAD
 target15.name=kate
+=======
+target15.name=kame
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=80
 target15.x=0
 target15.y=0
 target16.height=50
+<<<<<<< HEAD
 target16.name=kate_s
+=======
+target16.name=human
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=80
 target16.x=0
 target16.y=0
 target17.height=50
+<<<<<<< HEAD
 target17.name=enemy2
+=======
+target17.name=MyWorld
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=80
 target17.x=0
 target17.y=0
 target18.height=50
+<<<<<<< HEAD
 target18.name=MyWorld
 target18.showInterface=false
 target18.type=ClassTarget
@@ -204,6 +278,14 @@ target19.type=ClassTarget
 target19.width=80
 target19.x=0
 target19.y=0
+=======
+target18.name=chapter2_kate
+target18.showInterface=false
+target18.type=ClassTarget
+target18.width=100
+target18.x=0
+target18.y=0
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target2.height=50
 target2.name=chapter2_keropi
 target2.showInterface=false
@@ -219,17 +301,25 @@ target20.width=100
 target20.x=0
 target20.y=0
 target3.height=50
+<<<<<<< HEAD
 target3.name=select
+=======
+target3.name=a
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target3.showInterface=false
 target3.type=ClassTarget
-target3.width=110
+target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=runrun_s
+=======
+target4.name=select
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target4.showInterface=false
 target4.type=ClassTarget
-target4.width=80
+target4.width=110
 target4.x=0
 target4.y=0
 target5.height=50
@@ -261,10 +351,14 @@ target8.width=110
 target8.x=0
 target8.y=0
 target9.height=50
+<<<<<<< HEAD
 target9.name=keropi_s
+=======
+target9.name=chapter1_kate
+>>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
 target9.showInterface=false
 target9.type=ClassTarget
-target9.width=80
+target9.width=110
 target9.x=0
 target9.y=0
 version=3.0.0
