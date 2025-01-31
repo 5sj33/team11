@@ -9,21 +9,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class kate extends Actor
 {
-<<<<<<< HEAD
     private int speed = 5; // 移動速度の設定
+    private int attack=0;
 
-=======
     public kate() 
     {
         // 画像サイズを調整
         getImage().scale(341, 400);
     }
 
-
-    private int speed = 5; // 移動速度の設定
-
 /*>>>>>>> df628f16de152212f1de7759f9a08e96c38dd4ff*/
->>>>>>> 29b28fb2b42287f73cfbeb0167cacbe88da00444
+
     public void act() 
     {
         // キー入力による移動
@@ -42,6 +38,12 @@ public class kate extends Actor
 
         // 画像の大きさを設定
         getImage().scale(400, 360);
+        
+        Actor actor = getOneIntersectingObject( enemy2.class );
+        if( actor != null ){
+            // enemy2 とぶつかった時の処理を書く
+            attack++;
+        }
     }    
 }
 

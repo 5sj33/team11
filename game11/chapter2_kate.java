@@ -130,6 +130,8 @@ public class chapter2_kate extends World
         kate player = new kate();
         addObject(player,getWidth() - 1300, 700); // 初期位置 (左端中央)
         
+        
+        
     }
     
 
