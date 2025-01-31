@@ -114,7 +114,7 @@ public class chapter1_keropi extends World
     public void act()
     {
         if( Greenfoot.isKeyDown( "space" ) ){
-            World game = new chapter1();
+            World game = new chapter2_keropi();
             Greenfoot.setWorld( game );
         }else if(Greenfoot.isKeyDown( "escape" )){
             World game = new select();

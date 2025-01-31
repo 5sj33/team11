@@ -17,8 +17,9 @@ public class enemy2 extends Actor
         // Add your action code here.
         getImage().scale(250, 190);
         int A = 0;
-        int B = 360;
-        int C = A + (int)(Math.random()*((B-A)+1));
+        int B = 600;
+        //int C = A + (int)(Math.random()*((B-A)+1));
+        int C = A + (int)(Math.random()*(B-A));
         
         setRotation(C);
         move(50);
