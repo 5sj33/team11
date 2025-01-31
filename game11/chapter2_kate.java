@@ -118,12 +118,36 @@ public class chapter2_kate extends World
         small3.setImage(smallImage3);
         addObject(small3, getWidth() - 480, 240);
         showTextEx("塔を攻撃してください", 780, 100, 50, true, Color.WHITE );
+        
+        
 
 
 
         // Add the kate character to the world
         kate player = new kate();
         addObject(player,getWidth() - 1300, 700); // 初期位置 (左端中央)
+        
+            bar_low low = new bar_low();
+            GreenfootImage bar_low = low.getImage();
+            bar_low.scale(453, 129);
+            low.setImage(bar_low);
+            addObject(low, 800, 850);
+            
+            bar_half half = new bar_half();
+            GreenfootImage bar_half = half.getImage();
+            bar_half.scale(453, 129);
+            half.setImage(bar_half);
+            addObject(half, 800, 850);
+
+            bar_full full = new bar_full();
+            GreenfootImage bar_full = full.getImage();
+            bar_full.scale(453, 129);
+            full.setImage(bar_full);
+            addObject(full, 800, 850);
+        
+            
+        
+            
     }
 }
 

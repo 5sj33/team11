@@ -36,7 +36,13 @@ public class kate extends Actor
         }
 
         // 画像の大きさを設定
-        getImage().scale(400, 360);
+        //getImage().scale(400, 360);
+        
+        Actor actor = getOneIntersectingObject( smalltower.class );
+        if( actor != null ){
+            // TARO とぶつかった時の処理を書く
+            setLocation(getX() - speed, getY());
+        }  
     }    
 }
 
