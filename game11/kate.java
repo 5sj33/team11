@@ -1,12 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
-<<<<<<< HEAD
-<<<<<<< HEAD
- * kate クラス
- * 'W', 'S', 'A', 'D' キーでキャラクターを操作できる
- */
-
 public class kate extends Actor
 {
     private int speed = 5; // 移動速度の設定
@@ -19,7 +12,6 @@ public class kate extends Actor
         getImage().scale(341, 400);
     }
 
-/*>>>>>>> df628f16de152212f1de7759f9a08e96c38dd4ff*/
 
     public void act() 
     {
@@ -38,6 +30,13 @@ public class kate extends Actor
         }
 
         // 画像の大きさを設定
+        //getImage().scale(400, 360);
+        
+        Actor actor = getOneIntersectingObject( smalltower.class );
+        if( actor != null ){
+            // TARO とぶつかった時の処理を書く
+            setLocation(getX() - speed, getY());
+        }  
         getImage().scale(400, 360);
         
         Actor enemy2 = getOneIntersectingObject( enemy2.class );

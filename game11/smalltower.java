@@ -35,5 +35,6 @@ public class kate extends Actor
     public void act() 
     {
         // Add your action code here.
+        
     }    
 }
