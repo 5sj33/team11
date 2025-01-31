@@ -118,6 +118,9 @@ public class chapter2_keropi extends World
         small3.setImage(smallImage3);
         addObject(small3, getWidth() - 480, 240);
         showTextEx("塔を攻撃してください", 780, 100, 50, true, Color.WHITE );
+        
+        addObject(new enemy1(), 1500,200);
+        addObject(new enemy2(), 1500,200);
 
 
 

@@ -102,7 +102,7 @@ public class chapter1_keropi extends World
         showTextEx("体当たりが得意または好きな人", 400, 500, 50, true, Color.WHITE );
         showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
         
-        addObject(new keropi(), 1300,550);
+        addObject(new keropi_s(), 1300,550);
         showTextEx("Keropi", 1300, 300, 40, true, Color.WHITE );
         showTextEx("スペースで続行→", 800, 700, 40, true, Color.WHITE );
         showTextEx("←Escapeでキャラ選択画面に戻る", 800, 800, 40, true, Color.WHITE );

@@ -98,11 +98,11 @@ public class select extends World
         super(1600, 900, 1); 
         showTextEx("キャラクターを選択してください♪", 800, 200, 70, true, Color.WHITE );
         
-        addObject(new kate(), 300,550);
+        addObject(new kate_s(), 300,550);
         showTextEx("1キーで選択", 300, 300, 40, true, Color.WHITE );
-        addObject(new keropi(), 800,550);
+        addObject(new keropi_s(), 800,550);
         showTextEx("2キーで選択", 800, 300, 40, true, Color.WHITE );
-        addObject(new runrun(), 1300,550);
+        addObject(new runrun_s(), 1300,550);
         showTextEx("3キーで選択", 1300, 300, 40, true, Color.WHITE );
        
         

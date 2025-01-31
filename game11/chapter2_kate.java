@@ -12,6 +12,8 @@ import java.awt.Graphics2D;
  */
 public class chapter2_kate extends World
 {
+    private int speed = 5; // 移動速度の設定
+    
     class TextLabelEx extends TextLabel
     {
         boolean enable;
@@ -119,7 +121,12 @@ public class chapter2_kate extends World
         addObject(small3, getWidth() - 480, 240);
         showTextEx("塔を攻撃してください", 780, 100, 50, true, Color.WHITE );
         
+<<<<<<< HEAD
         
+=======
+        addObject(new enemy1(), 1500,200);
+        addObject(new enemy2(), 1500,200);
+>>>>>>> a9f203ff4a0f661f5f815349759fc0ebba0104cd
 
 
 
@@ -127,6 +134,7 @@ public class chapter2_kate extends World
         kate player = new kate();
         addObject(player,getWidth() - 1300, 700); // 初期位置 (左端中央)
         
+<<<<<<< HEAD
             bar_low low = new bar_low();
             GreenfootImage bar_low = low.getImage();
             bar_low.scale(453, 129);
@@ -148,6 +156,13 @@ public class chapter2_kate extends World
             
         
             
+=======
+        
+        
+>>>>>>> a9f203ff4a0f661f5f815349759fc0ebba0104cd
     }
+    
+
+    
 }
 

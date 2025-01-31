@@ -102,7 +102,7 @@ public class chapter1_kate extends World
         showTextEx("弾をあてるのが得意または好きな人", 400, 500, 50, true, Color.WHITE );
         showTextEx("におすすめのキャラクターです！", 400, 600, 50, true, Color.WHITE );
         
-        addObject(new kate(), 1300,550);
+        addObject(new kate_s(), 1300,550);
         showTextEx("Kate", 1300, 300, 40, true, Color.WHITE );
         
         showTextEx("スペースで続行→", 800, 700, 40, true, Color.WHITE );
@@ -122,6 +122,6 @@ public class chapter1_kate extends World
             World game = new select();
             Greenfoot.setWorld( game );
         }
-}
+   }
     
 }

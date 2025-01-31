@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class keropi extends Actor
 {
+    
+    private int attack=0;
     /**
      * Act - do whatever the keropi wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -29,6 +31,12 @@ public class keropi extends Actor
         }
         if (Greenfoot.isKeyDown("d")) {
             setLocation(getX() + 5, getY()); // 右 (右に移動)
+        }
+        
+        Actor actor = getOneIntersectingObject( enemy2.class );
+        if( actor != null ){
+            // enemy2 とぶつかった時の処理を書く
+            attack++;
         }
     }
     
